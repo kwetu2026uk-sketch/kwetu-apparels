@@ -1,0 +1,62 @@
+{
+  "name": "SiteSettings",
+  "type": "object",
+  "properties": {
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "working_hours": {
+      "type": "string",
+      "title": "Working Hours"
+    },
+    "tiktok": {
+      "type": "string",
+      "title": "TikTok URL"
+    },
+    "instagram": {
+      "type": "string",
+      "title": "Instagram URL"
+    },
+    "facebook": {
+      "type": "string",
+      "title": "Facebook URL"
+    },
+    "address": {
+      "type": "string",
+      "title": "Address"
+    },
+    "map_query": {
+      "type": "string",
+      "title": "Map Query"
+    },
+    "mission": {
+      "type": "string",
+      "title": "Our Mission"
+    },
+    "vision": {
+      "type": "string",
+      "title": "Our Vision"
+    },
+    "ceo_name": {
+      "type": "string",
+      "title": "CEO Name"
+    },
+    "ceo_photo": {
+      "type": "string",
+      "title": "CEO Photo URL"
+    },
+    "ceo_message": {
+      "type": "string",
+      "title": "CEO Message"
+    }
+  },
+  "required": [
+    "phone",
+    "email"
+  ]
+}

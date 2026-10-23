@@ -1,0 +1,132 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "slug": {
+      "type": "string",
+      "title": "Slug"
+    },
+    "category_id": {
+      "type": "string",
+      "title": "Category ID"
+    },
+    "category_name": {
+      "type": "string",
+      "title": "Category Name"
+    },
+    "subtype": {
+      "type": "string",
+      "title": "Subtype"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Images"
+    },
+    "price": {
+      "type": "number",
+      "title": "Display Price (KES)",
+      "default": 0
+    },
+    "coming_soon": {
+      "type": "boolean",
+      "title": "Coming Soon / Price on Request",
+      "default": false
+    },
+    "origin": {
+      "type": "string",
+      "title": "Origin",
+      "enum": [
+        "local",
+        "imported"
+      ],
+      "default": "local"
+    },
+    "colours": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Colours"
+    },
+    "sizes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Available Sizes"
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "size": {
+            "type": "string"
+          },
+          "colour": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "sku": {
+            "type": "string"
+          },
+          "stock": {
+            "type": "number"
+          }
+        }
+      },
+      "title": "Variants"
+    },
+    "stock": {
+      "type": "number",
+      "title": "Total Stock",
+      "default": 0
+    },
+    "school_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "School IDs"
+    },
+    "all_schools": {
+      "type": "boolean",
+      "title": "All Schools",
+      "default": true
+    },
+    "featured": {
+      "type": "boolean",
+      "title": "Featured",
+      "default": false
+    },
+    "best_seller": {
+      "type": "boolean",
+      "title": "Best Seller",
+      "default": false
+    }
+  },
+  "required": [
+    "name",
+    "slug",
+    "category_id"
+  ]
+}

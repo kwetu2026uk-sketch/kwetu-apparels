@@ -1,0 +1,68 @@
+{
+  "name": "StockMovement",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "title": "Product ID"
+    },
+    "product_name": {
+      "type": "string",
+      "title": "Product Name"
+    },
+    "variant_id": {
+      "type": "string",
+      "title": "Variant ID"
+    },
+    "variant_label": {
+      "type": "string",
+      "title": "Variant Label"
+    },
+    "sku": {
+      "type": "string",
+      "title": "SKU"
+    },
+    "type": {
+      "type": "string",
+      "title": "Type",
+      "enum": [
+        "restock",
+        "online_sale",
+        "instore_sale",
+        "return",
+        "adjustment"
+      ]
+    },
+    "quantity": {
+      "type": "number",
+      "title": "Quantity"
+    },
+    "channel": {
+      "type": "string",
+      "title": "Channel",
+      "enum": [
+        "online",
+        "physical"
+      ]
+    },
+    "note": {
+      "type": "string",
+      "title": "Note"
+    },
+    "staff": {
+      "type": "string",
+      "title": "Staff Member"
+    },
+    "movement_date": {
+      "type": "string",
+      "title": "Date",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "product_id",
+    "type",
+    "quantity",
+    "channel"
+  ]
+}
